@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - Contact</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-default navbar-dark navigation">
+        <div class="container">
+            <!-- Title logo -->
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/logo/title-logo-80.png">
+                <source media="(min-width: 768px)" srcset="images/logo/title-logo-100.png">
+                <img class="img-fluid" src="images/logo/title-logo-100.png" alt="title logo">
+            </picture>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            </button>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right navigation-nav ml-auto">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="work.html">Work</a></li>
+                    <li class="active"><a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a></li>
+                    <li><a class="nav-link" href="about.html">About</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Title header -->
+    <div class="container">
+        <header class="row">
+            <div class="col-md">
+                <h1 class="text-uppercase text-center title-super">Abdul Samad</h1>
+                <h4 class="text-uppercase text-center title-desc">Front-end Ninja</h4>
+            </div>
+        </header>
+
+        <!-- Horizontal line -->
+        <div class="row">
+            <div class="col-md">
+                <hr>
+            </div>
+        </div>
+
+        <!-- Main image -->
+        <div class="row">
+            <div class="col-md">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="images/contact-us/contact-us-768-500.jpg">
+                    <source media="(max-width: 992px)" srcset="images/contact-us/contact-us-992-600.jpg">
+                    <source media="(max-width: 1200px)" srcset="images/contact-us/contact-us-1140-600.jpg">
+                    <img class="img-fluid" src="images/contact-us/contact-us-1200-600.jpg" alt="contact us image">
+                </picture>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- Contact -->
+        <div id="Contact-Me" class="row">
+            <div class="col-md-12 muted-text">
+                <h2>Contact Me</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Contact image -->
+            <div class="col-md-5 col-sm-5">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="images/profile/profile-pic-768-350.png">
+                    <img class="img-fluid" src="images/profile/profile-pic.png" alt="profile-pic">
+                </picture>
+            </div>
+
+            <!-- Contact address -->
+            <div class="col-md-7 col-sm-7">
+                <div class="contact-address">
+                    <h3 class="text-uppercase contact-title">About me</h3>
+                    <p class="contact-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>Here are the ways you can contact me:</p>
+                    <address>
+                        <ul>
+                            <li>Email Us <span class="address-list">(mailto:[@]abdulsamadf97)</span></li>
+                            <li>Facebook<span class="address-list">(@facebook)</span></li>
+                            <li>Twitter<span class="address-list">(@twitter)</span></li>
+                            <li>Instagram<span class="address-list">(@Instagram)</span></li>
+                        </ul>
+                    </address>
+                    <p>The best way is always by twitter.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid copyright-footer">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="copyright-text">© 2018 Abdul Samad</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('li > a').on('click', function (e) {
+            $('li').removeClass('active')
+            $(e.target).parent().addClass('active');
+        });
+        $("#project").on('shown.bs.modal', function (e) {
+            $(e.currentTarget).find('.img-fluid')[0].src = $(e.relatedTarget)[0].src.replace(/360-200/g, '768-300');
+        })
+    </script>
+
+</body>
+
+</html>
