@@ -1,6 +1,10 @@
 # HTMLPortfolio
 This is a simple but responsive HTML Portfolio project.
 
+## Get Started
+
+Click on this [link](https://htmlportfolio.netlify.com) to see the website **or** you can download or clone the project, and loading up the index.html file in your browser.
+
 ## Create Your Own Simple Portfolio
 Create your own simple portfolio in six easy steps.
 * Modify the page title and description.
